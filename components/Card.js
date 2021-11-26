@@ -6,6 +6,8 @@ const Card = ({ img, distance, location }) => {
     <div
       className=' flex items-center m-2 space-x-4 rounded-xl 
     cursor-pointer hover:bg-gray-100
+    justify-center
+     
     hover:scale-105
     transition
     transform duration-200 ease-out'

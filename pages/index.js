@@ -21,17 +21,19 @@ export default function Home(props) {
       <main className='max-w-7xl mx-auto px-8 sm:px-16'>
         <section className='pt-6'>
           <h2 className='text-4xl font-semibold pb-5'>Explore Nearby</h2>
-          <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4'>
-            {exploreData?.map(({ img, distance, location }, index) => {
-              return (
-                <Card
-                  key={index}
-                  img={img}
-                  distance={distance}
-                  location={location}
-                />
-              );
-            })}
+          <div className='flex justify-self-center'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 justify-center w-full'>
+              {exploreData?.map(({ img, distance, location }, index) => {
+                return (
+                  <Card
+                    key={index}
+                    img={img}
+                    distance={distance}
+                    location={location}
+                  />
+                );
+              })}
+            </div>
           </div>
         </section>
         <section>
@@ -45,6 +47,11 @@ export default function Home(props) {
             })}
           </div>
         </section>
+
+        <div>
+          <div className=''></div>
+        </div>
+        <div></div>
 
         <LargeCard
           img='https://links.papareact.com/4cj'
